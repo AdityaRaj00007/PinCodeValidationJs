@@ -6,3 +6,4 @@ function validate(pincode){
 }
 console.log(validate(400088));
 console.log(validate("A40088"));
+console.log(validate("400088B"));
