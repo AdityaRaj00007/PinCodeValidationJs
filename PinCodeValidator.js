@@ -1,5 +1,5 @@
-//Improved the privious One To more Understandable
-const regex = /^[0-9][0-9]{5}$/;
+//Regex to allow Spaces also
+const regex = /^[0-9]{3}\s?[0-9]{3}$/;
 //function to validate pin code
 function validate(pincode){
     return regex.test(pincode);
@@ -7,3 +7,4 @@ function validate(pincode){
 console.log(validate(400088));
 console.log(validate("A40088"));
 console.log(validate("400088B"));
+console.log(validate("400 088"));
